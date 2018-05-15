@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background: black;
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 10vw;
+    text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+h1 small {
+    font-size: .5em;
+    display: block;
+}
+
+h2 {
+    text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+
+.amandarinamals {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.amandarinamal {
+    max-width: 30vw;
+    min-width: 200px;
+    text-align: center;
+    padding: 1vw;
+    font-size: 2em;
+    text-shadow:
+		-1px -1px 0 #fff,
+		1px -1px 0 #fff,
+		-1px 1px 0 #fff,
+		1px 1px 0 #fff;
+}
+
+.amandarinamal img {
+    width: 100%;
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
