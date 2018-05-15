@@ -34,10 +34,23 @@ h2 {
 }
 
 .amandarinamal {
+    position: relative;
     max-width: 30vw;
     min-width: 200px;
     text-align: center;
-    padding: 1vw;
+    margin: 1vw;
+    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.amandarinamal h3 {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    line-height: 1.5em;
+    background-color: #e26fe1;
+    z-index: 10;
+    bottom: 0px;
     font-size: 2em;
     text-shadow:
 		-1px -1px 0 #fff,
@@ -48,6 +61,4 @@ h2 {
 
 .amandarinamal img {
     width: 100%;
-    -webkit-clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
 }
