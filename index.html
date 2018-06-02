@@ -35,12 +35,22 @@
                         <h3>Rosie</h3>
                         <img alt="Rosie the gray cat with white stockings" src="img/rosie.jpg" />
                     </section>
-                    <section class="amandarinamal">
+                    <section class="amandarinamal goboquest">
                         <h3>Gobo Gus</h3>
                         <img alt="Gobo Gus the former stray kitten who steals food" src="img/gobo_gus.jpg" />
                     </section>
                 </div>
             </section>
         </main>
+
+        <script>
+            const goboquestLinks = document.getElementsByClassName('goboquest');
+            console.log(goboquestLinks)
+            Array.from(goboquestLinks).forEach((element) => {
+                element.addEventListener('click', () => {
+                    window.location.href = "/goboquest";
+                });
+            });
+        </script>
     </body>
 </html>

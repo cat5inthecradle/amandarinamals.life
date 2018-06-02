@@ -1,0 +1,29 @@
+<html>
+    <template id="goboGusTemplate">
+        <style>
+            root {
+                height: 32px;
+                width: 32px;
+            }
+        </style>
+
+        <div>
+            <content></content>
+        </div>
+
+        <script>
+            const importDoc = document.currentScript.ownerDocument;
+            const goboGusPrototype = Object.create(HTMLElement.prototype);
+            goboGusPrototype.createdCallback = function () {
+                const shadow = this.createShadowRoot();
+                const template = importDoc.querySelector('#goboGusTemplate');
+                shadow.appendChild(template.content.cloneNode(true));
+            };
+
+            document.registerElement('gobo-gus', {
+                prototype: nameBadgePrototype
+            });
+        </script>
+
+    </template>
+</html>
